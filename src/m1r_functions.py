@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# TODO:
+# TO:
 #   1. READ the code below.
 #   2. TRACE (by hand) the execution of the code,
 #        predicting what will get printed.
@@ -40,6 +40,5 @@ def goodbye(friend):
 def hello_and_goodbye(person1, person2):
     hello(person1)
     goodbye(person2)
-
-
+    
 main()
