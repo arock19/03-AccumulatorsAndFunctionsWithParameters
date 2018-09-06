@@ -10,14 +10,16 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Mark Hays, Amanda Stouder,
 """  # TO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
-
+import math
 
 def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
     print_sequence1()
     draw_circles1()
-
+    print_sequence2()
+    print_sequence3()
+    print_cosines()
 def print_sequence1():
     """
     Prints:
@@ -59,7 +61,7 @@ def draw_circles1():
     print('--------------------------------------------------')
     print('Running draw_circles1:  See graphics window')
     print('--------------------------------------------------')
-    window=rg.RoseWindow()
+    window=rg.RoseWindow(400,400)
     for k in range(22):
         circle=rg.Circle(rg.Point(200,200),k*10)
         circle.outline_color='blue'
@@ -80,6 +82,9 @@ def print_sequence2():
       ...
       390.
     """
+    for k in range(18):
+        print(50+20*k)
+
     # ------------------------------------------------------------------
     # TODO: 4. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
@@ -122,6 +127,8 @@ def print_sequence3():
       ...
       100.
     """
+    for k in range(100):
+        print(k+1)
     # ------------------------------------------------------------------
     # TODO: 6. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
@@ -170,6 +177,8 @@ def print_cosines():
        3.185670431451112
        68.9855097830147
     """
+    for k in range(101):
+        print(80*math.cos(k))
     # ------------------------------------------------------------------
     # TODO: 8. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
