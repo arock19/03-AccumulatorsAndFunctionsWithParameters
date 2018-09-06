@@ -16,6 +16,7 @@ def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
     print_sequence1()
+    draw_circles1()
 
 def print_sequence1():
     """
@@ -58,6 +59,14 @@ def draw_circles1():
     print('--------------------------------------------------')
     print('Running draw_circles1:  See graphics window')
     print('--------------------------------------------------')
+    window=rg.RoseWindow()
+    for k in range(22):
+        circle=rg.Circle(rg.Point(200,200),k*10)
+        circle.outline_color='blue'
+        circle.outline_thickness=3
+        circle.attach_to(window)
+    window.close_on_mouse_click()
+
 
 
 def print_sequence2():
